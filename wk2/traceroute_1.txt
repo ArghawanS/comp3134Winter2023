@@ -1,0 +1,26 @@
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# apt-get install traceroute
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following NEW packages will be installed:
+  traceroute
+0 upgraded, 1 newly installed, 0 to remove and 24 not upgraded.
+Need to get 45.4 kB of archives.
+After this operation, 152 kB of additional disk space will be used.
+Get:1 http://mirrors.digitalocean.com/ubuntu focal/universe amd64 traceroute amd64 1:2.1.0-2 [45.4 kB]
+Fetched 45.4 kB in 0s (624 kB/s)
+Selecting previously unselected package traceroute.
+(Reading database ... 98959 files and directories currently installed.)
+Preparing to unpack .../traceroute_1%3a2.1.0-2_amd64.deb ...
+Unpacking traceroute (1:2.1.0-2) ...
+Setting up traceroute (1:2.1.0-2) ...
+update-alternatives: using /usr/bin/traceroute.db to provide /usr/bin/traceroute (traceroute) in auto mode
+update-alternatives: using /usr/bin/lft.db to provide /usr/bin/lft (lft) in auto mode
+update-alternatives: using /usr/bin/traceproto.db to provide /usr/bin/traceproto (traceproto) in auto mode
+update-alternatives: using /usr/sbin/tcptraceroute.db to provide /usr/sbin/tcptraceroute (tcptraceroute) in auto mode
+Processing triggers for man-db (2.9.1-1) ...
+
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# traceroute 146.190.244.30
+traceroute to 146.190.244.30 (146.190.244.30), 30 hops max, 60 byte packets
+ 1  lamp-ubuntu-s-1vcpu-1gb-tor1-01 (146.190.244.30)  0.047 ms  0.007 ms  0.006 ms
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# 

@@ -1,0 +1,117 @@
+Last login: Sat Jan 21 00:02:28 on ttys003
+(base) arghawanghulamsiddiq@MacBook-Pro-2 ~ % ssh root@IP_ADDRESS
+ssh: Could not resolve hostname ip_address: nodename nor servname provided, or not known
+(base) arghawanghulamsiddiq@MacBook-Pro-2 ~ % ssh root@146.190.244.30
+The authenticity of host '146.190.244.30 (146.190.244.30)' can't be established.
+ED25519 key fingerprint is SHA256:rkZqsgixW/VhsgNADQiOoNuPHCEuHOZOClz1Uc4KsXw.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? y
+Please type 'yes', 'no' or the fingerprint: yes
+Warning: Permanently added '146.190.244.30' (ED25519) to the list of known hosts.
+root@146.190.244.30's password: 
+Welcome to Ubuntu 20.04.5 LTS (GNU/Linux 5.4.0-135-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Sun Jan 22 16:12:21 UTC 2023
+
+  System load:  0.0                Users logged in:       0
+  Usage of /:   11.9% of 24.05GB   IPv4 address for eth0: 146.190.244.30
+  Memory usage: 61%                IPv4 address for eth0: 10.20.0.5
+  Swap usage:   0%                 IPv4 address for eth1: 10.118.0.2
+  Processes:    122
+
+18 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+New release '22.04.1 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+*** System restart required ***
+********************************************************************************
+
+Welcome to DigitalOcean's 1-Click LAMP Droplet.
+To keep this Droplet secure, the UFW firewall is enabled.
+All ports are BLOCKED except 22 (SSH), 80 (HTTP), and 443 (HTTPS).
+
+In a web browser, you can view:
+ * The LAMP 1-Click Quickstart guide: https://do.co/3gY97ha#start
+ * Your LAMP website: http://146.190.244.30
+
+On the server:
+ * The default web root is located at /var/www/html
+ * If you're using the embedded database, the MySQL root password
+   is saved in /root/.digitalocean_password. If you've opted in to
+   using a DBaaS instance with DigitalOcean, you will find your
+   credentials written to /root/.digitalocean_dbaas_credentials
+   and you will have access to a DATABASE_URL environment variable
+   holding your database connection string.
+ * Certbot is preinstalled. Run it to configure HTTPS. See
+   https://do.co/3gY97ha#enable-https for more detail.
+
+For help and more information, visit https://do.co/3gY97ha
+
+********************************************************************************
+To delete this message of the day: rm -rf /etc/update-motd.d/99-one-click
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# apt-get update
+Hit:1 http://mirrors.digitalocean.com/ubuntu focal InRelease
+Hit:2 https://repos-droplet.digitalocean.com/apt/droplet-agent main InRelease  
+Hit:3 http://mirrors.digitalocean.com/ubuntu focal-updates InRelease           
+Hit:4 http://mirrors.digitalocean.com/ubuntu focal-backports InRelease
+Hit:5 http://ppa.launchpad.net/ondrej/php/ubuntu focal InRelease    
+Get:6 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]
+Fetched 114 kB in 1s (123 kB/s)    
+Reading package lists... Done
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# apt-get install apache2-utils
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+apache2-utils is already the newest version (2.4.41-4ubuntu3.12).
+0 upgraded, 0 newly installed, 0 to remove and 24 not upgraded.
+
+
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# apt-get install traceroute
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+traceroute is already the newest version (1:2.1.0-2).
+0 upgraded, 0 newly installed, 0 to remove and 24 not upgraded.
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~#  traceroute www.google.com
+traceroute to www.google.com (108.177.13.106), 30 hops max, 60 byte packets
+ 1  162.243.190.5 (162.243.190.5)  3.191 ms  3.157 ms 162.243.190.6 (162.243.190.6)  11.467 ms
+ 2  138.197.249.76 (138.197.249.76)  3.122 ms  3.106 ms 138.197.249.72 (138.197.249.72)  3.087 ms
+ 3  138.197.249.90 (138.197.249.90)  3.070 ms 138.197.249.78 (138.197.249.78)  11.385 ms  11.367 ms
+ 4  72.14.219.10 (72.14.219.10)  3.021 ms 162.243.190.33 (162.243.190.33)  3.163 ms 72.14.219.10 (72.14.219.10)  2.987 ms
+ 5  74.125.244.162 (74.125.244.162)  3.130 ms 74.125.244.167 (74.125.244.167)  11.286 ms 108.170.250.227 (108.170.250.227)  11.260 ms
+ 6  209.85.254.198 (209.85.254.198)  11.345 ms 142.250.46.186 (142.250.46.186)  9.179 ms 209.85.254.198 (209.85.254.198)  9.144 ms
+ 7  72.14.233.100 (72.14.233.100)  16.619 ms 142.250.61.192 (142.250.61.192)  17.261 ms 142.251.69.4 (142.251.69.4)  16.938 ms
+ 8  142.251.227.120 (142.251.227.120)  23.349 ms 108.170.225.157 (108.170.225.157)  23.334 ms *
+ 9  * 142.250.210.27 (142.250.210.27)  23.288 ms *
+10  142.251.227.30 (142.251.227.30)  32.059 ms 216.239.58.152 (216.239.58.152)  32.523 ms 142.251.227.30 (142.251.227.30)  31.827 ms
+11  216.239.48.201 (216.239.48.201)  31.803 ms 142.251.79.102 (142.251.79.102)  35.459 ms 172.253.74.205 (172.253.74.205)  36.670 ms
+12  216.239.41.237 (216.239.41.237)  32.462 ms 142.250.57.77 (142.250.57.77)  32.391 ms  32.275 ms
+13  * * *
+14  * * *
+15  * * *
+16  * * *
+17  * * *
+18  * * *
+19  * * *
+20  * * *
+21  * * *
+22  ub-in-f106.1e100.net (108.177.13.106)  32.037 ms  31.830 ms  31.499 ms
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# tracert 146.190.244.30
+
+Command 'tracert' not found, did you mean:
+
+  command 'tracert6' from deb ndisc6 (1.0.4-1ubuntu1)
+  command 'tracer' from deb pvm-dev (3.4.6-2build2)
+
+Try: apt install <deb name>
+
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# traceroute 146.190.244.30
+traceroute to 146.190.244.30 (146.190.244.30), 30 hops max, 60 byte packets
+ 1  lamp-ubuntu-s-1vcpu-1gb-tor1-01 (146.190.244.30)  0.048 ms  0.011 ms  0.010 ms

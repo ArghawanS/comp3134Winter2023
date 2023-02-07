@@ -1,0 +1,33 @@
+
+
+C. Identifying Server:
+
+Domain Name Look-Up:
+
+01- https://www.utoronto.ca/
+
+Ip: 104.28.133.22
+Geolocation: Canada, On, Toranto
+Loc: 43.7001,-79.4163
+Org: AS13335 Cloudflare, Inc
+
+2. www.twitter.com
+
+IP Address: 104.244.42.65
+Geolocation: US (United States), CA, California, 94103 San Francisco 
+
+3- https://www.yorku.ca/
+
+IP Address: 130.63.236.137
+Geolocation: CA (Canada), ON, Ontario, M3J Toronto
+
+4- https://www.mcmaster.ca/
+
+IP Address: 130.113.64.30
+Geolocation: CA (Canada), ON, Ontario, L8S Hamilton
+
+5- https://uwaterloo.ca/
+
+IP Address: 129.97.208.23
+Geolocation: CA (Canada), ON, Ontario, N2L Waterloo
+

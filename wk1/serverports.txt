@@ -1,0 +1,20 @@
+-what is the definition of server port?
+    * A port is a virtual point where a network connections start and end
+
+- what is server port range?
+    * 0 - 65535
+
+- how many bits does number above represent?
+    * 16
+
+- state 10 common server ports
+    * FTP - 20and 21
+    * SSH - 22
+    * SMTP - 25
+    * DNS - 53
+    * HTTP - 80
+    * NTP - 123
+    * BGP - 179
+    * HTTPS - 443
+    * ISAKMP - 500
+    * RDP - 3389

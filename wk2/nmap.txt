@@ -1,0 +1,52 @@
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# nmap www.google.com
+Starting Nmap 7.80 ( https://nmap.org ) at 2023-01-22 18:38 UTC
+Nmap scan report for www.google.com (108.177.13.105)
+Host is up (0.033s latency).
+Other addresses for www.google.com (not scanned): 108.177.13.147 108.177.13.99 108.177.13.104 108.177.13.106 108.177.13.103 2607:f8b0:400c:c13::69 2607:f8b0:400c:c13::68 2607:f8b0:400c:c13::63 2607:f8b0:400c:c13::6a
+rDNS record for 108.177.13.105: ub-in-f105.1e100.net
+Not shown: 998 filtered ports
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+Nmap done: 1 IP address (1 host up) scanned in 5.19 seconds
+
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# nmap -p 80 www.google.com
+Starting Nmap 7.80 ( https://nmap.org ) at 2023-01-22 18:44 UTC
+Nmap scan report for www.google.com (108.177.13.105)
+Host is up (0.033s latency).
+Other addresses for www.google.com (not scanned): 108.177.13.147 108.177.13.104 108.177.13.99 108.177.13.106 108.177.13.103 2607:f8b0:400b:803::2004
+rDNS record for 108.177.13.105: ub-in-f105.1e100.net
+
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap done: 1 IP address (1 host up) scanned in 0.13 seconds
+
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# nmap -p 53-443 www.google.com
+Starting Nmap 7.80 ( https://nmap.org ) at 2023-01-22 18:41 UTC
+Nmap scan report for www.google.com (108.177.13.103)
+Host is up (0.033s latency).
+Other addresses for www.google.com (not scanned): 108.177.13.106 108.177.13.104 108.177.13.99 108.177.13.147 108.177.13.105 2607:f8b0:400c:c13::6a 2607:f8b0:400c:c13::63 2607:f8b0:400c:c13::68 2607:f8b0:400c:c13::69
+rDNS record for 108.177.13.103: ub-in-f103.1e100.net
+Not shown: 389 filtered ports
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+Nmap done: 1 IP address (1 host up) scanned in 3.06 seconds
+
+
+
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# nmap -F www.facebook.com
+Starting Nmap 7.80 ( https://nmap.org ) at 2023-01-22 18:42 UTC
+Nmap scan report for www.facebook.com (31.13.80.36)
+Host is up (0.0016s latency).
+Other addresses for www.facebook.com (not scanned): 2a03:2880:f10e:83:face:b00c:0:25de
+rDNS record for 31.13.80.36: edge-star-mini-shv-01-yyz1.facebook.com
+Not shown: 98 filtered ports
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+Nmap done: 1 IP address (1 host up) scanned in 1.90 seconds

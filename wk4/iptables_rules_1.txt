@@ -1,0 +1,50 @@
+Last login: Mon Jan 30 22:21:20 on ttys000
+(base) arghawanghulamsiddiq@MacBook-Pro-2 ~ % ssh root@146.190.244.30
+root@146.190.244.30's password: 
+Welcome to Ubuntu 20.04.5 LTS (GNU/Linux 5.4.0-135-generic x86_64)
+
+ *  Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Tue Jan 31 05:55:26 UTC 2023
+
+  System load:  0.02               Users logged in:       0
+  Usage of /:   13.0% of 24.05GB   IPv4 address for eth0: 146.190.244.30
+  Memory usage: 61%                IPv4 address for eth0: 10.20.0.5
+  Swap usage:   0%                 IPv4 address for eth1: 10.118.0.2
+  Processes:    120
+
+18 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+
+*** System restart required ***
+********************************************************************************
+
+Welcome to DigitalOcean's 1-Click LAMP Droplet.
+To keep this Droplet secure, the UFW firewall is enabled.
+All ports are BLOCKED except 22 (SSH), 80 (HTTP), and 443 (HTTPS).
+
+In a web browser, you can view:
+ * The LAMP 1-Click Quickstart guide: https://do.co/3gY97ha#start
+ * Your LAMP website: http://146.190.244.30
+
+On the server:
+ * The default web root is located at /var/www/html
+ * If you're using the embedded database, the MySQL root password
+   is saved in /root/.digitalocean_password. If you've opted in to
+   using a DBaaS instance with DigitalOcean, you will find your
+   credentials written to /root/.digitalocean_dbaas_credentials
+   and you will have access to a DATABASE_URL environment variable
+   holding your database connection string.
+ * Certbot is preinstalled. Run it to configure HTTPS. See
+   https://do.co/3gY97ha#enable-https for more detail.
+
+For help and more information, visit https://do.co/3gY97ha
+
+********************************************************************************
+To delete this message of the day: rm -rf /etc/update-motd.d/99-one-click
+Last login: Thu Jan 26 03:43:39 2023 from 76.64.103.178
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# man iptables
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# 

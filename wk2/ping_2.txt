@@ -1,0 +1,91 @@
+(base) arghawanghulamsiddiq@MacBook-Pro-2 ~ % ssh root@146.190.244.30
+The authenticity of host '146.190.244.30 (146.190.244.30)' can't be established.
+ED25519 key fingerprint is SHA256:rkZqsgixW/VhsgNADQiOoNuPHCEuHOZOClz1Uc4KsXw.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? y
+Please type 'yes', 'no' or the fingerprint: yes
+Warning: Permanently added '146.190.244.30' (ED25519) to the list of known hosts.
+root@146.190.244.30's password: 
+Welcome to Ubuntu 20.04.5 LTS (GNU/Linux 5.4.0-135-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Sun Jan 22 16:12:21 UTC 2023
+
+  System load:  0.0                Users logged in:       0
+  Usage of /:   11.9% of 24.05GB   IPv4 address for eth0: 146.190.244.30
+  Memory usage: 61%                IPv4 address for eth0: 10.20.0.5
+  Swap usage:   0%                 IPv4 address for eth1: 10.118.0.2
+  Processes:    122
+
+18 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+New release '22.04.1 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+*** System restart required ***
+********************************************************************************
+
+Welcome to DigitalOcean's 1-Click LAMP Droplet.
+To keep this Droplet secure, the UFW firewall is enabled.
+All ports are BLOCKED except 22 (SSH), 80 (HTTP), and 443 (HTTPS).
+
+In a web browser, you can view:
+ * The LAMP 1-Click Quickstart guide: https://do.co/3gY97ha#start
+ * Your LAMP website: http://146.190.244.30
+
+On the server:
+ * The default web root is located at /var/www/html
+ * If you're using the embedded database, the MySQL root password
+   is saved in /root/.digitalocean_password. If you've opted in to
+   using a DBaaS instance with DigitalOcean, you will find your
+   credentials written to /root/.digitalocean_dbaas_credentials
+   and you will have access to a DATABASE_URL environment variable
+   holding your database connection string.
+ * Certbot is preinstalled. Run it to configure HTTPS. See
+   https://do.co/3gY97ha#enable-https for more detail.
+
+For help and more information, visit https://do.co/3gY97ha
+
+********************************************************************************
+To delete this message of the day: rm -rf /etc/update-motd.d/99-one-click
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# apt-get update
+Hit:1 http://mirrors.digitalocean.com/ubuntu focal InRelease
+Hit:2 https://repos-droplet.digitalocean.com/apt/droplet-agent main InRelease  
+Hit:3 http://mirrors.digitalocean.com/ubuntu focal-updates InRelease           
+Hit:4 http://mirrors.digitalocean.com/ubuntu focal-backports InRelease
+Hit:5 http://ppa.launchpad.net/ondrej/php/ubuntu focal InRelease    
+Get:6 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]
+Fetched 114 kB in 1s (123 kB/s)    
+Reading package lists... Done
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# apt-get install apache2-utils
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+apache2-utils is already the newest version (2.4.41-4ubuntu3.12).
+0 upgraded, 0 newly installed, 0 to remove and 24 not upgraded.
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# ping {146.190.244.30}
+ping: {146.190.244.30}: Name or service not known
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# ping 146.190.244.30
+PING 146.190.244.30 (146.190.244.30) 56(84) bytes of data.
+64 bytes from 146.190.244.30: icmp_seq=1 ttl=64 time=0.045 ms
+64 bytes from 146.190.244.30: icmp_seq=2 ttl=64 time=0.067 ms
+64 bytes from 146.190.244.30: icmp_seq=3 ttl=64 time=0.054 ms
+64 bytes from 146.190.244.30: icmp_seq=4 ttl=64 time=0.059 ms
+64 bytes from 146.190.244.30: icmp_seq=5 ttl=64 time=0.059 ms
+64 bytes from 146.190.244.30: icmp_seq=6 ttl=64 time=0.057 ms
+64 bytes from 146.190.244.30: icmp_seq=7 ttl=64 time=0.072 ms
+64 bytes from 146.190.244.30: icmp_seq=8 ttl=64 time=0.061 ms
+64 bytes from 146.190.244.30: icmp_seq=9 ttl=64 time=0.056 ms
+64 bytes from 146.190.244.30: icmp_seq=10 ttl=64 time=0.057 ms
+64 bytes from 146.190.244.30: icmp_seq=11 ttl=64 time=0.068 ms
+64 bytes from 146.190.244.30: icmp_seq=12 ttl=64 time=0.060 ms
+64 bytes from 146.190.244.30: icmp_seq=13 ttl=64 time=0.063 ms
+^C
+--- 146.190.244.30 ping statistics ---
+13 packets transmitted, 13 received, 0% packet loss, time 12281ms
+rtt min/avg/max/mdev = 0.045/0.059/0.072/0.006 ms
