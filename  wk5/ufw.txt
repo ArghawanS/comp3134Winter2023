@@ -1,0 +1,19 @@
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# ufw status
+Status: active
+
+To                         Action      From
+--                         ------      ----
+22/tcp                     LIMIT       Anywhere                  
+Apache Full                ALLOW       Anywhere                  
+22/tcp (v6)                LIMIT       Anywhere (v6)             
+Apache Full (v6)           ALLOW       Anywhere (v6)             
+
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# ufw app list
+Available applications:
+  Apache
+  Apache Full
+  Apache Secure
+  OpenSSH
+  Postfix
+  Postfix SMTPS
+  Postfix Submission
