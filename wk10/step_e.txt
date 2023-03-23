@@ -1,0 +1,7 @@
+Should not be able to view files and folders before html directory
+
+I would check the basename of the path, if it's current path then show the folders if not then don't show the contents
+
+Should not attempt to look at folders that do not exists
+
+Take a look at the speo_e.png implementation that includes the file exists implementation.

@@ -1,0 +1,10 @@
+This is what the browser shows: 
+
+Array
+(
+    [0] => .
+    [1] => ..
+    [2] => html
+)
+
+It has sensitive information because it's has a list of files in the directory one level up from the current php script. User must not have access to this.

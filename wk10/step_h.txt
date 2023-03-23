@@ -1,0 +1,1 @@
+I mitigated the problem by converting the HTML comments into PHP comments.

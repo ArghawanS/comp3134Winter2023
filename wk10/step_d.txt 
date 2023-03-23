@@ -1,0 +1,7 @@
+
+1: no information displayed because it looks for the directory name "hello" which does not exist.
+
+Warning:  scandir(hello): Failed to open directory: No such file or directory in /var/www/html/directory_traversal_part1.php on line 7
+Warning:  scandir(): (errno 2): No such file or directory in /var/www/html/directory_traversal_part1.php on line 7
+
+ 2: no sensitive information displayed by this page.
