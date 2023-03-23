@@ -1,0 +1,2 @@
+root@lamp-ubuntu-s-1vcpu-1gb-tor1-01:~# sudo tcpdump -i any -w all_traffic_$(date +"%Y%m%d_%H%M").pcap
+tcpdump: listening on any, link-type LINUX_SLL (Linux cooked v1), capture size 262144 bytes
