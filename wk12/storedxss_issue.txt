@@ -1,0 +1,10 @@
+The vulnerability arises because the "storexss.php" file reads and outputs the contents 
+of "storedxss.txt" directly to the browser without any form of sanitization.
+This means that any malicious code contained in the "storedxss.txt" file will
+be executed on the user's browser when they visit the "storexss.php" page.
+
+A potential attacker could exploit this vulnerability by tricking a user into 
+submitting a form or inputting data into the web application that is then stored 
+in the "storedxss.txt" file. The attacker could then insert malicious code into the 
+file that is executed when the user visits the "storexss.php" page, allowing them to 
+steal user data or perform other malicious actions.
